@@ -45,7 +45,9 @@ function kiemTra(x) {
     return x % 2 === 0 || x % 3 === 0;
 }
 
-inSo(kiemTra);
+inSo(function (x) {
+    return x % 2 === 0 || x % 3 === 0;
+});
 
 // inSoChia3Du1();
 
