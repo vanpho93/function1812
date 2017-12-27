@@ -26,6 +26,27 @@ function inSoChinhPhuong() {
     }
 }
 
+function inSo(fn) {
+    for(let i = 0; i <= 100; i++) {
+        const dk = fn(i);//kiemTraSoChinhPhuong(i);
+        if (dk) console.log(i);
+    }
+}
+
+function kiemTraSoChinhPhuong(x) {
+    return Math.sqrt(x) % 1 === 0;
+}
+
+function kiemTraSoChan(x) {
+    return x % 2 === 0;
+}
+
+function kiemTra(x) {
+    return x % 2 === 0 || x % 3 === 0;
+}
+
+inSo(kiemTra);
+
 // inSoChia3Du1();
 
 // function inSo(soBiChia, soDu) {
@@ -35,4 +56,4 @@ function inSoChinhPhuong() {
 //     }
 // }
 
-inSoChinhPhuong();
+// inSoChinhPhuong();
