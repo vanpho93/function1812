@@ -5,14 +5,8 @@ function inSo(fn) {
     }
 }
 
-inSo(function(x) {
-    return x % 2 === 0;
-});
+// inSo(x => x % 2 === 0);
 
-inSo(function(x) {
-    return x % 2 === 1;
-});
+inSo(x => x % 2 === 1);
 
-inSo(function(x) {
-    return Math.sqrt(x) % 1 === 0;
-});
+inSo(x => Math.sqrt(x) % 1 === 0);
