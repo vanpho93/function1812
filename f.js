@@ -44,7 +44,7 @@ function veHinh(n, fn) {
         console.log(s);
     }
 }
-veHinh(4, (i, j, n) => i >= j);
+veHinh(4, (i, j) => i >= j);
 // veHinh(5, (i, j, n) => i + j <= n + 1);
 // veHinh(7, (i, j, n) => {
 //     const trungTam = (n + 1) / 2;
